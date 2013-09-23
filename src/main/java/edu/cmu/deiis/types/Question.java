@@ -10,8 +10,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** 
- * Updated by JCasGen Wed Sep 11 13:44:28 EDT 2013
- * XML source: /home/diwang/ur-workspace/deiis-f13-homework/src/main/resources/desc/deiis_types.xml
+ * Updated by JCasGen Mon Sep 23 06:49:47 PDT 2013
+ * XML source: /home/psureshk/workspace/hw2-psureshk/src/main/resources/descriptors/deiis_types.xml
  * @generated */
 public class Question extends Annotation {
   /** @generated
@@ -59,6 +59,40 @@ public class Question extends Annotation {
   @generated modifiable */
   private void readObject() {/*default - does nothing empty block */}
      
-}
+  //*--------------*
+  //* Feature: Subject
+
+  /** getter for Subject - gets Identifies the subject in the Question
+   * @generated */
+  public String getSubject() {
+    if (Question_Type.featOkTst && ((Question_Type)jcasType).casFeat_Subject == null)
+      jcasType.jcas.throwFeatMissing("Subject", "edu.cmu.deiis.types.Question");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Question_Type)jcasType).casFeatCode_Subject);}
+    
+  /** setter for Subject - sets Identifies the subject in the Question 
+   * @generated */
+  public void setSubject(String v) {
+    if (Question_Type.featOkTst && ((Question_Type)jcasType).casFeat_Subject == null)
+      jcasType.jcas.throwFeatMissing("Subject", "edu.cmu.deiis.types.Question");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Question_Type)jcasType).casFeatCode_Subject, v);}    
+   
+    
+  //*--------------*
+  //* Feature: Object
+
+  /** getter for Object - gets Identifies the object in the question
+   * @generated */
+  public String getObject() {
+    if (Question_Type.featOkTst && ((Question_Type)jcasType).casFeat_Object == null)
+      jcasType.jcas.throwFeatMissing("Object", "edu.cmu.deiis.types.Question");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Question_Type)jcasType).casFeatCode_Object);}
+    
+  /** setter for Object - sets Identifies the object in the question 
+   * @generated */
+  public void setObject(String v) {
+    if (Question_Type.featOkTst && ((Question_Type)jcasType).casFeat_Object == null)
+      jcasType.jcas.throwFeatMissing("Object", "edu.cmu.deiis.types.Question");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Question_Type)jcasType).casFeatCode_Object, v);}    
+  }
 
     

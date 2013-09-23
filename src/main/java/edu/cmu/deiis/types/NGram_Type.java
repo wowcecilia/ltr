@@ -13,7 +13,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Wed Sep 11 13:44:28 EDT 2013
+ * Updated by JCasGen Mon Sep 23 06:49:47 PDT 2013
  * @generated */
 public class NGram_Type extends Annotation_Type {
   /** @generated */
@@ -66,7 +66,7 @@ public class NGram_Type extends Annotation_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i);
-	return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i);
   }
    
   /** @generated */ 

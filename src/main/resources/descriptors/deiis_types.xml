@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <name>deiis_types</name>
   <description/>
   <version>1.0</version>
@@ -60,6 +62,18 @@
       <name>edu.cmu.deiis.types.Question</name>
       <description/>
       <supertypeName>edu.cmu.deiis.types.Annotation</supertypeName>
+    <features>
+        <featureDescription>
+          <name>Subject</name>
+          <description>Identifies the subject in the Question</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>Object</name>
+          <description>Identifies the object in the question</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
     </typeDescription>
     <typeDescription>
       <name>edu.cmu.deiis.types.AnswerScore</name>
