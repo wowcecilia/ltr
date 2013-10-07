@@ -9,8 +9,11 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
+import org.apache.uima.jcas.cas.DoubleArray;
+
+
 /** 
- * Updated by JCasGen Mon Sep 23 06:49:46 PDT 2013
+ * Updated by JCasGen Sun Oct 06 16:53:39 PDT 2013
  * XML source: /home/psureshk/workspace/hw2-psureshk/src/main/resources/descriptors/deiis_types.xml
  * @generated */
 public class AnswerScore extends Annotation {

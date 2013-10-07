@@ -10,8 +10,11 @@ import org.apache.uima.cas.FeatureStructure;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
+import org.apache.uima.cas.impl.FeatureImpl;
+import org.apache.uima.cas.Feature;
+
 /** 
- * Updated by JCasGen Mon Sep 23 06:49:47 PDT 2013
+ * Updated by JCasGen Sun Oct 06 16:53:40 PDT 2013
  * @generated */
 public class Token_Type extends Annotation_Type {
   /** @generated */

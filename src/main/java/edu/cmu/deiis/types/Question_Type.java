@@ -14,7 +14,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Mon Sep 23 06:49:47 PDT 2013
+ * Updated by JCasGen Sun Oct 06 16:53:40 PDT 2013
  * @generated */
 public class Question_Type extends Annotation_Type {
   /** @generated */
@@ -81,6 +81,24 @@ public class Question_Type extends Annotation_Type {
     ll_cas.ll_setStringValue(addr, casFeatCode_Object, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_Verb;
+  /** @generated */
+  final int     casFeatCode_Verb;
+  /** @generated */ 
+  public String getVerb(int addr) {
+        if (featOkTst && casFeat_Verb == null)
+      jcas.throwFeatMissing("Verb", "edu.cmu.deiis.types.Question");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_Verb);
+  }
+  /** @generated */    
+  public void setVerb(int addr, String v) {
+        if (featOkTst && casFeat_Verb == null)
+      jcas.throwFeatMissing("Verb", "edu.cmu.deiis.types.Question");
+    ll_cas.ll_setStringValue(addr, casFeatCode_Verb, v);}
+    
+  
 
 
 
@@ -97,6 +115,10 @@ public class Question_Type extends Annotation_Type {
  
     casFeat_Object = jcas.getRequiredFeatureDE(casType, "Object", "uima.cas.String", featOkTst);
     casFeatCode_Object  = (null == casFeat_Object) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_Object).getCode();
+
+ 
+    casFeat_Verb = jcas.getRequiredFeatureDE(casType, "Verb", "uima.cas.String", featOkTst);
+    casFeatCode_Verb  = (null == casFeat_Verb) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_Verb).getCode();
 
   }
 }
