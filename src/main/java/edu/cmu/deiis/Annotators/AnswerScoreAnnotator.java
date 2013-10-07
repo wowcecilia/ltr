@@ -44,29 +44,20 @@ public class AnswerScoreAnnotator extends JCasAnnotator_ImplBase {
     }
     //Collections.sort(al,Collections.reverseOrder(new AnswerComparator()));
     /*To print output*/
-   for(int i = 0; i< al.size();i++)
-    {
+    int correct = 0;
+    for (int i = 0; i < al.size(); i++) {
       String[] arr = lines[al.get(i).getAnswerOldPosition()].split(" ", 3);
-      if(al.get(i).getIsCorrect())
-        System.out.println("+ "+al.get(i).getScore() +" " + arr[2]);
-      else
-        System.out.println("- "+al.get(i).getScore() +" " + arr[2]);
+      if (al.get(i).getIsCorrect()) {
+        System.out.println("+ " + al.get(i).getScore() + " " + arr[2]);
+        if (arr[1].equals("1"))
+          correct++;
+      } else {
+        System.out.println("- " + al.get(i).getScore() + " " + arr[2]);
+        if (arr[1].equals("0"))
+          correct++;
+      }
     }
+    int accuracy = correct/(lines.length-1);
+    System.out.println("Accuracy at : "+accuracy); 
   }
-}
-
-class AnswerComparator implements Comparator<Answer>
-{
-  @Override
-  public int compare(Answer a1, Answer a2) {
-    //return o1.getScore() - o2.getScore();
-    if(a1.getScore()> a2.getScore())
-      return 1;
-    else if(a1.getScore() < a2.getScore())
-      return -1;
-    else
-      return 0;
-      
-  }
-  
 }
