@@ -142,5 +142,22 @@
         </featureDescription>
       </features>
     </typeDescription>
+  <typeDescription>
+      <name>edu.cmu.deiis.types.FeatureVector</name>
+      <description>Type to store the feature vector obtained from parsing the Question and Answer</description>
+      <supertypeName>edu.cmu.deiis.types.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>FeatureVector</name>
+          <description>To store the features in a line format</description>
+          <rangeTypeName>uima.cas.FloatArray</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>edu.cmu.deiis.types.RankingModel</name>
+      <description/>
+      <supertypeName>edu.cmu.deiis.types.Annotation</supertypeName>
+    </typeDescription>
   </types>
 </typeSystemDescription>

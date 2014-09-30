@@ -36,6 +36,7 @@ public class AnswerScoreAnnotator extends JCasAnnotator_ImplBase {
          aa = aa1;
          max = aa1.getScore();
       }
+      
     }
     al.add(aa);
     aa.setDummy(-1);

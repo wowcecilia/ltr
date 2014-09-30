@@ -13,6 +13,12 @@
   <delegateAnalysisEngine key="AnswerScoreAnnotatorDescriptor">
       <import name="descriptors.AnswerScoreAnnotatorDescriptor"/>
     </delegateAnalysisEngine>
+  <delegateAnalysisEngine key="FeatureAnnotatorDescriptor">
+      <import location="FeatureAnnotatorDescriptor.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="RankingModelAnnotatorDescriptor">
+      <import location="RankingModelAnnotatorDescriptor.xml"/>
+    </delegateAnalysisEngine>
   </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
     <name>PipelineDescriptor</name>
@@ -26,6 +32,8 @@
         <node>QuestionAnnotatorDescriptor</node>
         <node>AnswerAnnotatorDescriptor</node>
       <node>AnswerScoreAnnotatorDescriptor</node>
+      <node>FeatureAnnotatorDescriptor</node>
+        <node>RankingModelAnnotatorDescriptor</node>
       </fixedFlow>
     </flowConstraints>
     <fsIndexCollection/>
