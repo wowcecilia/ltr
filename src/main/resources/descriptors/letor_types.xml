@@ -7,7 +7,7 @@
   <vendor/>
   <types>
     <typeDescription>
-      <name>edu.cmu.deiis.types.Annotation</name>
+      <name>edu.cmu.letor.types.Annotation</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
@@ -24,20 +24,20 @@
       </features>
     </typeDescription>
     <typeDescription>
-      <name>edu.cmu.deiis.types.Token</name>
+      <name>edu.cmu.letor.types.Token</name>
       <description/>
-      <supertypeName>edu.cmu.deiis.types.Annotation</supertypeName>
+      <supertypeName>edu.cmu.letor.types.Annotation</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>edu.cmu.deiis.types.NGram</name>
+      <name>edu.cmu.letor.types.NGram</name>
       <description/>
-      <supertypeName>edu.cmu.deiis.types.Annotation</supertypeName>
+      <supertypeName>edu.cmu.letor.types.Annotation</supertypeName>
       <features>
         <featureDescription>
           <name>elements</name>
           <description/>
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-          <elementType>edu.cmu.deiis.types.Annotation</elementType>
+          <elementType>edu.cmu.letor.types.Annotation</elementType>
         </featureDescription>
         <featureDescription>
           <name>elementType</name>
@@ -47,9 +47,9 @@
       </features>
     </typeDescription>
     <typeDescription>
-      <name>edu.cmu.deiis.types.Answer</name>
+      <name>edu.cmu.letor.types.Answer</name>
       <description/>
-      <supertypeName>edu.cmu.deiis.types.Annotation</supertypeName>
+      <supertypeName>edu.cmu.letor.types.Annotation</supertypeName>
       <features>
         <featureDescription>
           <name>isCorrect</name>
@@ -104,9 +104,9 @@
       </features>
     </typeDescription>
     <typeDescription>
-      <name>edu.cmu.deiis.types.Question</name>
+      <name>edu.cmu.letor.types.Question</name>
       <description/>
-      <supertypeName>edu.cmu.deiis.types.Annotation</supertypeName>
+      <supertypeName>edu.cmu.letor.types.Annotation</supertypeName>
     <features>
         <featureDescription>
           <name>Subject</name>
@@ -126,9 +126,9 @@
       </features>
     </typeDescription>
     <typeDescription>
-      <name>edu.cmu.deiis.types.AnswerScore</name>
+      <name>edu.cmu.letor.types.AnswerScore</name>
       <description/>
-      <supertypeName>edu.cmu.deiis.types.Annotation</supertypeName>
+      <supertypeName>edu.cmu.letor.types.Annotation</supertypeName>
       <features>
         <featureDescription>
           <name>score</name>
@@ -138,14 +138,14 @@
         <featureDescription>
           <name>answer</name>
           <description/>
-          <rangeTypeName>edu.cmu.deiis.types.Answer</rangeTypeName>
+          <rangeTypeName>edu.cmu.letor.types.Answer</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
   <typeDescription>
-      <name>edu.cmu.deiis.types.FeatureVector</name>
+      <name>edu.cmu.letor.types.FeatureVector</name>
       <description>Type to store the feature vector obtained from parsing the Question and Answer</description>
-      <supertypeName>edu.cmu.deiis.types.Annotation</supertypeName>
+      <supertypeName>edu.cmu.letor.types.Annotation</supertypeName>
       <features>
         <featureDescription>
           <name>FeatureVector</name>
@@ -155,9 +155,9 @@
       </features>
     </typeDescription>
     <typeDescription>
-      <name>edu.cmu.deiis.types.RankingModel</name>
+      <name>edu.cmu.letor.types.RankingModel</name>
       <description/>
-      <supertypeName>edu.cmu.deiis.types.Annotation</supertypeName>
+      <supertypeName>edu.cmu.letor.types.Annotation</supertypeName>
     </typeDescription>
   </types>
 </typeSystemDescription>

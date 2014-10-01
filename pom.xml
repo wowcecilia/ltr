@@ -92,7 +92,7 @@
 		</dependency>
 	</dependencies>
 	<scm>
-		<connection>scm:git:git@github.com:psureshk/hw2-psureshk.git</connection>
-		<developerConnection>scm:git:git@github.com:psureshk/hw2-psureshk.git</developerConnection>
+		<connection>scm:git:git@github.com:wowcecilia/ltr.git</connection>
+		<developerConnection>scm:git:git@github.com:wowcecilia/ltr.git</developerConnection>
 	</scm>
 </project>
